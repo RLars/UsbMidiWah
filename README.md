@@ -3,7 +3,8 @@ This project uses a Digispark to emulate an USB MIDI device, to be integrated as
 
 # Hardware
 <img src="wiring_Steckplatine.png" height="400"/>
-Digispark + Potentiometer and switch (as contained in Wahwah pedals like Dunlop CryBaby etc.).
+Digispark + Potentiometer(s) and switch(es) (as contained in Wahwah pedals like Dunlop CryBaby etc.).
+The solution is easily extensible to the amount of analog and digital inputs you want to use.
 
 # Dependencies
 https://github.com/heartscrytech/DigisparkMIDI
