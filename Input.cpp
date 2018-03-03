@@ -34,6 +34,9 @@ bool AnalogInput::processSensorValue(int sensorValue) {
   static uint8_t oldExpVal = 255;
 
   /* TODO: Linearize signal here? */
+  sensorValue = 1023 * pow(ADC/1023.,10);
+
+  /* Map signal to Midi value range*/
   uint8_t sensorVal = map(sensorValue, 0, 1023, MIDI_MIN_EXPRESSION, MIDI_MAX_EXPRESSION);
 
   /* check if value has changed */
